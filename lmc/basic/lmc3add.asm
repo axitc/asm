@@ -1,0 +1,7 @@
+	LDA	A
+	LDA	B
+	ADD	A
+	OUT
+	HLT
+A	DAT	4
+B	DAT	5

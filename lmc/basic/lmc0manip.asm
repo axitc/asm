@@ -1,0 +1,4 @@
+INP
+STA 20
+OUT
+HLT

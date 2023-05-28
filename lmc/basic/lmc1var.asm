@@ -1,0 +1,5 @@
+	INP
+	STA	A
+	OUT
+	HLT
+A	DAT
