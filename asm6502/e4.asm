@@ -1,0 +1,5 @@
+LDA	#$C0
+TAY
+INY
+ADC	#$C4
+BRK

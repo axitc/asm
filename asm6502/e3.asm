@@ -1,0 +1,7 @@
+LDA	#$0A
+TAX
+LDA	#$0B
+TAY
+LDA	#$00
+TXA
+TYA
