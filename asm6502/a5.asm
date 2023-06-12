@@ -1,0 +1,5 @@
+LDA	#$01
+STA	$F0
+LDA	#$CC
+STA	$F1
+JMP	($00F0)

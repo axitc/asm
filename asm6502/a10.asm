@@ -1,0 +1,16 @@
+	JSR	INIT
+	JSR	LOOP
+	JSR	END
+
+INIT:
+	LDX	#$00
+	RTS
+
+LOOP:
+	INX
+	CPX	#$05
+	BNE	LOOP
+	RTS
+
+END:
+	BRK

@@ -1,0 +1,7 @@
+	LDA	#$03
+	JMP	THERE
+	BRK
+	BRK
+	BRK
+THERE:
+	STA	$0200

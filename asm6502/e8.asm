@@ -1,0 +1,36 @@
+	LDX	#$01
+	STX	$0200
+	INX
+	STX	$00
+	INX
+	STX	$02,X
+	LDA	#$01
+	INX
+	STA	$0200,X
+	LDX	$02
+	LDA	#$01
+	CMP	#$01
+	BNE	NOTEQ
+	STA	$2345
+NOTEQ:
+	LDA	#$AA
+	STA	$B3
+	LDA	#$06
+	STA	$B4
+	JMP	($00B3)
+	LDX	#$01
+	LDA	#$AA
+	STA	$01
+	LDA	#$06
+	STA	$02
+	LDY	#$0A
+	STY	$06AA
+	LDA	($00,X)
+	LDY	#$01
+	LDA	#$AA
+	STA	$01
+	LDA	#$06
+	STA	$02
+	LDX	#$0A
+	STX	$06AA
+	LDA	($01),Y
